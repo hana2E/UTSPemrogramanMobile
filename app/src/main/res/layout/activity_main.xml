@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:theme="@style/AppTheme.Dark">
+
+    <!-- masukkan toolbar disini -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accenttext"
+        android:elevation="45dp"
+        android:padding="10dp"
+        app:popupTheme="@style/AppTheme.Dark"
+        app:title="Suara Kucing"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/white" />
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press the Image to Play the Cat Sound"
+        android:textSize="20dp"
+        android:background="@color/primary"
+        android:textColor="@color/accenttext"
+        android:padding="3dp" />
+
+    <include layout="@layout/activity_content_menu" />
+
+</LinearLayout>
